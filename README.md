@@ -14,7 +14,9 @@ of the database to be created.
 Use `sequelize-cli` to run the existing migrations and seeder files.  Use 
 `sqlite3` to check that the `Bands`, `Instruments`, `Musicians`, and 
 `MusicianInstruments` tables exists in your database and you have seed data 
-present.
+present.  The tables created follow the following schema:
+
+![band-musician-instrument-db-schema]
 
 In this practice you will be implementing the `GET /musicians` route handler in 
 __app.js__ which will query your database for all `Musicians`. You will use 
@@ -165,3 +167,7 @@ solution works as intended with various query parameters for each endpoint.
 
 You are now able to utilize pagination to `offset` and `limit` the results of 
 your queries in **Sequelize**.
+
+
+[band-musician-instrument-db-schema]: https://appacademy-open-assets.s3.us-west-1.amazonaws.com/Modular-Curriculum/content/week-11/practices/band-musician-instrument-db-schema.png
+[band-musician-instrument-db-diagram-info]: https://appacademy-open-assets.s3.us-west-1.amazonaws.com/Modular-Curriculum/content/week-11/practices/band-musician-instrument-db-diagram-info.txt
